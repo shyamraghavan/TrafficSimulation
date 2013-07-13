@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+*.iml
+/.idea/
+=======
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+>>>>>>> 3f5fe68f0b4a812b14fd1713383dd6e8e8996f4b
