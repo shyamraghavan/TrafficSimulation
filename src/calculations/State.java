@@ -19,5 +19,5 @@ public class State {
 
     private DecisionValues decisionValues;
 
-    //TODO: pair decision values with input and output roads
+
 }
