@@ -16,22 +16,28 @@ public class RunSim {
 
     private static GUIHandler guiHandler;
 
-    public static ArrayList<Input> inputRoads;
-    public static ArrayList<Output> outputRoads;
+    public static ArrayList<Input> INPUTRoads;
+    public static ArrayList<Output> OUTPUTRoads;
 
-    public static void main (String args[]){
+    public static void main (String args[]) {
 
         guiHandler = new GUIHandler();
 
-
-
     }
 
-    public static ArrayList<Input> getInputRoads()
-    {
-        return inputRoads;
+    /**
+     *
+     * @return ArrayList of INPUT Roads
+     */
+    public static ArrayList<Input> getINPUTRoads() {
+        return INPUTRoads;
     }
-    public static ArrayList<Output> getOutputRoads() {
-        return outputRoads;
+
+    /**
+     *
+     * @return ArrayList of OUTPUT Roads
+     */
+    public static ArrayList<Output> getOUTPUTRoads() {
+        return OUTPUTRoads;
     }
 }

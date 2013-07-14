@@ -16,7 +16,6 @@ public class DecisionValues {
      *
      * @param numInputs number of INPUTS in system
      */
-
     public DecisionValues (int numInputs) {
         values = new double[numInputs];
     }
@@ -38,5 +37,22 @@ public class DecisionValues {
             values[x] = Integer.parseInt(parseValues.substring(beginIndex,endIndex));
             lastIndex = endIndex - 1;
         }
+    }
+
+    /**
+     *
+     * @return number of INPUTS in system
+     */
+    public int getNumInputs () {
+        return numInputs;
+    }
+
+    /**
+     *
+     * @param indexOfValue index of value to be returned in DecisionValues
+     * @return value at index in DecisionValues
+     */
+    public double getValue(int indexOfValue) {
+        return values[indexOfValue];
     }
 }
