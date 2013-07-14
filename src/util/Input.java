@@ -6,5 +6,7 @@ package util;
  * Date: 7/13/13
  * Time: 7:35 PM
  */
-public class Input {
+public class Input extends Variable {
+
+
 }

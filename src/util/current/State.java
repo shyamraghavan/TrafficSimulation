@@ -1,4 +1,4 @@
-package util;
+package util.current;
 
 /**
  * Created with IntelliJ IDEA.
