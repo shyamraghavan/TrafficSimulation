@@ -1,10 +1,12 @@
-package util;
+package calculations;
 
 /**
  * Created with IntelliJ IDEA.
  * User: shyam
  * Date: 7/13/13
- * Time: 7:35 PM
+ * Time: 10:53 PM
  */
-public class Output extends Variable{
+public class DecisionValues {
+
+
 }
