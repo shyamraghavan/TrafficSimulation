@@ -1,6 +1,8 @@
 package sim;
 
-import form.GUIHandler;
+import calculations.DecisionValues;
+import calculations.Movement;
+import calculations.State;
 import util.Input;
 import util.Output;
 
@@ -14,13 +16,29 @@ import java.util.ArrayList;
  */
 public class RunSim {
 
-    private static GUIHandler guiHandler;
-
     public static ArrayList<Input> INPUTRoads;
     public static ArrayList<Output> OUTPUTRoads;
 
     public static void main (String args[]) {
+        Input zero = new Input(0);
+        Input one = new Input(1);
+        Input two = new Input(2);
+        Input three = new Input(3);
 
+        INPUTRoads.add(zero);
+        INPUTRoads.add(one);
+        INPUTRoads.add(two);
+        INPUTRoads.add(three);
+
+        DecisionValues decisionValues = new DecisionValues(8,"2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 ");
+
+        State currentState = new State("0220133101231230",decisionValues);
+
+        ArrayList<Movement> movements = currentState.getMovements();
+
+        for (Movement movement: movements) {
+            System.out.println(movement.toString());
+        }
     }
 
     /**

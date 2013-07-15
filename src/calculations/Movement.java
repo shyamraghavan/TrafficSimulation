@@ -53,4 +53,13 @@ public class Movement {
     public double getTime () {
         return time;
     }
+
+    @Override
+    public String toString() {
+        return "Movement{" +
+                "input=" + input +
+                ", output=" + output +
+                ", time=" + time +
+                '}';
+    }
 }

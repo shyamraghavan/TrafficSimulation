@@ -36,7 +36,7 @@ public class DecisionValues {
             int beginIndex = parseValues.indexOf(" ",lastIndex);
             int endIndex = parseValues.indexOf(" ",beginIndex);
 
-            values[x] = Integer.parseInt(parseValues.substring(beginIndex,endIndex));
+            values[x] = Double.parseDouble(parseValues.substring(beginIndex,endIndex));
             lastIndex = endIndex - 1;
         }
 
