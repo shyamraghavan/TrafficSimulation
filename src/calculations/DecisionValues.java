@@ -15,7 +15,7 @@ public class DecisionValues {
     /**
      *
      * @param numMovements number of INPUTS in system
-     * @param parseValues values for parsing for INPUTS
+     * @param parseValues values for parsing for decisionValues of INPUTS
      */
     public DecisionValues (int numMovements, String parseValues) {
         values = new double[numMovements];
