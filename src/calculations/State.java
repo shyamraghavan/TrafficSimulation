@@ -20,29 +20,45 @@ public class State {
     private DecisionValues decisionValues;
     private String configuration;
 
+    private ArrayList<Movement> movements;
+
     /**
      *
      * @param configuration configuration for particular state
+     * @param decisionValues values for particular state
      */
-    public State (String configuration) {
-        decisionValues = new DecisionValues(configuration.length()/2);
+    public State (String configuration, DecisionValues decisionValues) {
+        this.decisionValues = decisionValues;
+        movements = new ArrayList<Movement>();
+
+        createMovements();
 
         this.configuration = configuration;
     }
 
     /**
      *
-     * @return decisionValues for particular state
      */
-    public DecisionValues getDecisionValues () {
-        return decisionValues;
+    private void createMovements() {
+        for (int x = 0; x < configuration.length()/2; x++) {
+            int beginIndex = 2*x;
+            int endIndex = beginIndex + 1;
+
+            String simpleConfig = configuration.substring(beginIndex,endIndex);
+
+            double simpleTime = decisionValues.getValue(x);
+
+            Movement newMovement = new Movement(simpleConfig,simpleTime);
+
+            movements.add(newMovement);
+        }
     }
 
     /**
      *
-     * @return configuration for particular state
+     * @return movements for particular state
      */
-    public String getConfiguration() {
-        return configuration;
+    public ArrayList<Movement> getMovements () {
+        return movements;
     }
 }
