@@ -21,8 +21,6 @@ public class RunSim {
 
     public static void main (String args[]) {
 
-        guiHandler = new GUIHandler();
-
     }
 
     /**

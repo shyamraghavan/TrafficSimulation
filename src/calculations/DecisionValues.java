@@ -10,41 +10,45 @@ public class DecisionValues {
 
     private double[] values;
 
-    private int numInputs;
+    private int numMovements;
 
     /**
      *
-     * @param numInputs number of INPUTS in system
+     * @param numMovements number of times traffic movements occur
      */
-    public DecisionValues (int numInputs) {
-        values = new double[numInputs];
+    public DecisionValues (int numMovements) {
+        values = new double[numMovements];
+
+        this.numMovements = numMovements;
     }
 
     /**
      *
-     * @param numInputs number of INPUTS in system
+     * @param numMovements number of INPUTS in system
      * @param parseValues values for parsing for INPUTS
      */
-    public DecisionValues (int numInputs, String parseValues) {
-        values = new double[numInputs];
+    public DecisionValues (int numMovements, String parseValues) {
+        values = new double[numMovements];
 
         int lastIndex = 0;
 
-        for (int x = 0; x < numInputs; x++) {
+        for (int x = 0; x < numMovements; x++) {
             int beginIndex = parseValues.indexOf(" ",lastIndex);
             int endIndex = parseValues.indexOf(" ",beginIndex);
 
             values[x] = Integer.parseInt(parseValues.substring(beginIndex,endIndex));
             lastIndex = endIndex - 1;
         }
+
+        this.numMovements = numMovements;
     }
 
     /**
      *
      * @return number of INPUTS in system
      */
-    public int getNumInputs () {
-        return numInputs;
+    public int getNumMovements () {
+        return numMovements;
     }
 
     /**

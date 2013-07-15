@@ -18,12 +18,15 @@ public class State {
     ArrayList<Input> INPUTRoads = RunSim.getINPUTRoads();
 
     private DecisionValues decisionValues;
+    private String configuration;
 
     /**
      *
      */
-    public State () {
-        decisionValues = new DecisionValues(INPUTRoads.size());
+    public State (String configuration) {
+        decisionValues = new DecisionValues(configuration.length()/2);
+
+        this.configuration = configuration;
     }
 
     /**
@@ -32,5 +35,13 @@ public class State {
      */
     public DecisionValues getDecisionValues () {
         return decisionValues;
+    }
+
+    /**
+     *
+     * @return configuration for particular state
+     */
+    public String getConfiguration() {
+        return configuration;
     }
 }
