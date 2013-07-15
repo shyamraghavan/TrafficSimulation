@@ -57,8 +57,8 @@ public class Movement {
     @Override
     public String toString() {
         return "Movement{" +
-                "input=" + input +
-                ", output=" + output +
+                "input=" + input.getIdentifier() +
+                ", output=" + output.getIdentifier() +
                 ", time=" + time +
                 '}';
     }

@@ -30,6 +30,16 @@ public class RunSim {
         INPUTRoads.add(two);
         INPUTRoads.add(three);
 
+        Output zeroO = new Output(0);
+        Output oneO = new Output(1);
+        Output twoO = new Output(2);
+        Output threeO = new Output(3);
+
+        OUTPUTRoads.add(zeroO);
+        OUTPUTRoads.add(oneO);
+        OUTPUTRoads.add(twoO);
+        OUTPUTRoads.add(threeO);
+
         DecisionValues decisionValues = new DecisionValues(8,"2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 ");
 
         State currentState = new State("0220133101231230",decisionValues);

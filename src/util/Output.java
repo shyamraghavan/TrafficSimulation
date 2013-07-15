@@ -13,4 +13,8 @@ public class Output{
     public Output (int identifier) {
         this.identifier = identifier;
     }
+
+    public int getIdentifier () {
+        return identifier;
+    }
 }

@@ -31,9 +31,9 @@ public class State {
         this.decisionValues = decisionValues;
         movements = new ArrayList<Movement>();
 
-        createMovements();
-
         this.configuration = configuration;
+
+        createMovements();
     }
 
     /**
@@ -42,7 +42,7 @@ public class State {
     private void createMovements() {
         for (int x = 0; x < configuration.length()/2; x++) {
             int beginIndex = 2*x;
-            int endIndex = beginIndex + 1;
+            int endIndex = beginIndex + 2;
 
             String simpleConfig = configuration.substring(beginIndex,endIndex);
 

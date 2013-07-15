@@ -33,11 +33,13 @@ public class DecisionValues {
         int lastIndex = 0;
 
         for (int x = 0; x < numMovements; x++) {
-            int beginIndex = parseValues.indexOf(" ",lastIndex);
-            int endIndex = parseValues.indexOf(" ",beginIndex);
+
+            int beginIndex = lastIndex;
+            int endIndex = parseValues.indexOf(" ",beginIndex + 1);
 
             values[x] = Double.parseDouble(parseValues.substring(beginIndex,endIndex));
-            lastIndex = endIndex - 1;
+            lastIndex = endIndex;
+
         }
 
         this.numMovements = numMovements;
