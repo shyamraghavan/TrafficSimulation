@@ -22,6 +22,7 @@ public class State {
 
     /**
      *
+     * @param configuration configuration for particular state
      */
     public State (String configuration) {
         decisionValues = new DecisionValues(configuration.length()/2);

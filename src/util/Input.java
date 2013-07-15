@@ -8,5 +8,4 @@ package util;
  */
 public class Input extends Variable {
 
-
 }
