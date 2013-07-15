@@ -1,9 +1,5 @@
 package calculations;
 
-import sim.RunSim;
-import util.Input;
-import util.Output;
-
 import java.util.ArrayList;
 
 /**
@@ -13,9 +9,6 @@ import java.util.ArrayList;
  * Time: 10:49 PM
  */
 public class State {
-
-    ArrayList<Output> OUTPUTRoads = RunSim.getOUTPUTRoads();
-    ArrayList<Input> INPUTRoads = RunSim.getINPUTRoads();
 
     private DecisionValues decisionValues;
     private String configuration;

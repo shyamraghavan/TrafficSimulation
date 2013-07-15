@@ -14,16 +14,6 @@ public class DecisionValues {
 
     /**
      *
-     * @param numMovements number of times traffic movements occur
-     */
-    public DecisionValues (int numMovements) {
-        values = new double[numMovements];
-
-        this.numMovements = numMovements;
-    }
-
-    /**
-     *
      * @param numMovements number of INPUTS in system
      * @param parseValues values for parsing for INPUTS
      */
@@ -43,14 +33,6 @@ public class DecisionValues {
         }
 
         this.numMovements = numMovements;
-    }
-
-    /**
-     *
-     * @return number of INPUTS in system
-     */
-    public int getNumMovements () {
-        return numMovements;
     }
 
     /**
