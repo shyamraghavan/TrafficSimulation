@@ -16,8 +16,8 @@ import java.util.ArrayList;
  */
 public class RunSim {
 
-    public static ArrayList<Input> INPUTRoads;
-    public static ArrayList<Output> OUTPUTRoads;
+    public static ArrayList<Input> INPUTRoads = new ArrayList<Input>();
+    public static ArrayList<Output> OUTPUTRoads = new ArrayList<Output>();
 
     public static void main (String args[]) {
         Input zero = new Input(0);
