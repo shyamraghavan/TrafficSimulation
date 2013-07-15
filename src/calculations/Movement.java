@@ -30,5 +30,27 @@ public class Movement {
         this.time = time;
     }
 
+    /**
+     *
+     * @return input of particular movement
+     */
+    public Input getInput () {
+        return input;
+    }
 
+    /**
+     *
+     * @return output of particular movement
+     */
+    public Output getOutput () {
+        return output;
+    }
+
+    /**
+     *
+     * @return time for particular movement
+     */
+    public double getTime () {
+        return time;
+    }
 }
