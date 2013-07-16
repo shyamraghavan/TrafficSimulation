@@ -10,10 +10,18 @@ public class Output{
 
     private int identifier;
 
+    /**
+     *
+     * @param identifier used to identify the OUTPUT
+     */
     public Output (int identifier) {
         this.identifier = identifier;
     }
 
+    /**
+     *
+     * @return identifier for specific OUTPUT
+     */
     public int getIdentifier () {
         return identifier;
     }
