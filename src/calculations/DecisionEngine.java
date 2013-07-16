@@ -34,7 +34,7 @@ public class DecisionEngine {
     public State calculateState (String configuration) {
         State passState;
 
-        //TODO insert decision-making state into method
+        //TODO: insert decision-making code into method
 
         addState(passState);
         return passState;
